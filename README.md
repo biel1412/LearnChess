@@ -108,3 +108,10 @@ src/LearnChess.Web/
 | GET | `/api/games/{id}/export/json` | baixar JSON |
 | GET | `/api/games/{id}/export/pgn` | baixar PGN |
 | DELETE | `/api/games/{id}` | excluir partida |
+
+## Publicação (Render)
+
+O projeto inclui um `Dockerfile`. No Render, crie um *Web Service* com runtime **Docker**
+apontando para este repositório; cada push no `main` publica de novo automaticamente.
+No plano gratuito os arquivos JSON das partidas são apagados quando o serviço reinicia —
+use o botão "⬇ JSON" para guardar suas partidas, ou adicione um disco persistente em `/app/data`.

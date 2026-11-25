@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.swp
+# Partidas salvas localmente (arquivos JSON gerados pelo app)
+**/data/games/
